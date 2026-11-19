@@ -1,0 +1,21 @@
+@source "../**/*.{ts,tsx,html}";
+@source "../../daisy-gutenberg.php";
+
+/* Define CSS layers and import Tailwind v4 WITHOUT preflight.css */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@plugin "daisyui" {
+	themes: all;
+	root: ":root";
+	prefix: "dg-";
+	logs: false;
+}
+
+
+/* Base font smoothing scoped to custom blocks */
+[data-type^="daisy-gutenberg/"] {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,45 @@
+{
+	"name": "daisy-gutenberg",
+	"version": "0.1.0",
+	"description": "A Gutenberg blocks library powered by DaisyUI",
+	"author": "Trung (Daniel) An <fifty8co@gmail.com>",
+	"license": "MIT",
+	"main": "build/index.js",
+	"scripts": {
+		"build:css": "postcss src/styles/main.css -o build/main.css && postcss src/styles/editor.css -o build/editor.css",
+		"watch:css": "postcss src/styles/main.css -o build/main.css -w & postcss src/styles/editor.css -o build/editor.css -w",
+		"build:blocks": "wp-scripts build",
+		"watch:blocks": "wp-scripts start",
+		"build": "npm run build:css && npm run build:blocks",
+		"start": "npm run watch:css & npm run watch:blocks",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:ts": "tsc --noEmit",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip"
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "latest",
+		"@wordpress/blocks": "latest",
+		"@wordpress/i18n": "latest",
+		"clsx": "^2.1.1",
+		"tailwind-merge": "^3.7.0"
+	},
+	"devDependencies": {
+		"@tailwindcss/postcss": "^4.3.5",
+		"@types/react": "^19.3.0",
+		"@types/wordpress__block-editor": "^15.0.9",
+		"@types/wordpress__blocks": "^15.10.2",
+		"@types/wordpress__components": "^23.0.12",
+		"@types/wordpress__element": "^2.4.1",
+		"@types/wordpress__i18n": "^3.4.0",
+		"@wordpress/scripts": "^37.1.0",
+		"autoprefixer": "^10.6.2",
+		"daisyui": "^5.8.1",
+		"postcss": "^8.5.33",
+		"postcss-cli": "^12.0.0",
+		"postcss-nested": "^9.0.1",
+		"tailwindcss": "^4.3.5",
+		"typescript": "^6.0.3"
+	}
+}

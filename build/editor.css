@@ -1,0 +1,20 @@
+/*! tailwindcss v4.3.5 | MIT License | https://tailwindcss.com */
+body.editor-styles-wrapper [data-type^="daisy-gutenberg/"], .editor-styles-wrapper [data-type^="daisy-gutenberg/"], [class*="daisy-gutenberg"] {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: currentColor;
+}
+body.editor-styles-wrapper [data-type^="daisy-gutenberg/"] *, body.editor-styles-wrapper [data-type^="daisy-gutenberg/"] *::before, body.editor-styles-wrapper [data-type^="daisy-gutenberg/"] *::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: currentColor;
+}
+.block-editor-block-list__block[data-type^="daisy-gutenberg/"] {
+  outline-offset: 2px;
+}
+.editor-styles-wrapper .dropdown-content,
+.editor-styles-wrapper .modal {
+  z-index: 100;
+}

@@ -1,0 +1,12 @@
+@import './scoped-reset.css';
+
+/* Fix Gutenberg block selection outlines overlapping DaisyUI edges */
+.block-editor-block-list__block[data-type^="daisy-gutenberg/"] {
+	outline-offset: 2px;
+}
+
+/* Ensure DaisyUI popovers and dropdowns layer properly above editor canvas */
+.editor-styles-wrapper .dropdown-content,
+.editor-styles-wrapper .modal {
+	z-index: 100;
+}

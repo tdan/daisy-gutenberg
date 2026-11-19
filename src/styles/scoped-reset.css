@@ -1,0 +1,20 @@
+/* Because we remove preflight.css,
+ * We need minimal reset scoped strictly to daisy-gutenberg blocks
+ **/
+body.editor-styles-wrapper [data-type^="daisy-gutenberg/"],
+.editor-styles-wrapper [data-type^="daisy-gutenberg/"],
+[class*="daisy-gutenberg"] {
+	box-sizing: border-box;
+	border-width: 0;
+	border-style: solid;
+	border-color: currentColor;
+}
+
+body.editor-styles-wrapper [data-type^="daisy-gutenberg/"] *,
+body.editor-styles-wrapper [data-type^="daisy-gutenberg/"] *::before,
+body.editor-styles-wrapper [data-type^="daisy-gutenberg/"] *::after {
+	box-sizing: border-box;
+	border-width: 0;
+	border-style: solid;
+	border-color: currentColor;
+}
