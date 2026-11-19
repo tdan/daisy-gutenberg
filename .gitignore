@@ -28,3 +28,7 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+# wp-env temporary artifacts
+.wp-env.json
+.wp-env.override.json
