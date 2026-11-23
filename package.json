@@ -27,6 +27,7 @@
 		"@wordpress/block-editor": "latest",
 		"@wordpress/blocks": "latest",
 		"@wordpress/i18n": "latest",
+		"@wordpress/ui": "^0.27.0",
 		"clsx": "^2.1.1",
 		"tailwind-merge": "^3.7.0"
 	},

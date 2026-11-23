@@ -1,6 +1,5 @@
 {
 	"$schema": "https://json.schemastore.org/tsconfig",
-	"extends": "@wordpress/scripts/config/tsconfig.json",
 	"compilerOptions": {
 		"target": "ESNext",
 		"module": "ESNext",
@@ -10,8 +9,9 @@
 		"noImplicitAny": true,
 		"strictNullChecks": true,
 		"skipLibCheck": true,
+		"resolveJsonModule": true,
 		"paths": {
-			"@/*": ["src/*"]
+			"@/*": ["./src/*"]
 		}
 	},
 	"include": ["src/**/*"]
